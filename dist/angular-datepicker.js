@@ -132,6 +132,7 @@ var Module = angular.module('datePicker', []);
           } else if (autoclose) {
             element.addClass('hidden');
             scope.$emit('hidePicker');
+            scope.setView(attrs.view);
           } else {
             prepareViewData();
           }
